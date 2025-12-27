@@ -1,0 +1,15 @@
+[project]
+name = "file_reader_app"  # This is the 'pip' package name
+version = "0.1.0"
+dependencies = [
+    "flet",
+    "pip>=25.3",
+]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+manifest-path = "engine/Cargo.toml"
+module-name = "quran_engine"  # This is what you will 'import' in Python
