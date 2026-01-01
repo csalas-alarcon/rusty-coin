@@ -12,3 +12,22 @@ fn factorial_loop(num: usize) -> usize {
     sum
 }
 /// fibonacci implementation with a loop
+fn fibonacci(n: usize) -> usize {
+    let mut a= 1;
+    let mut b= 1;
+
+    for _ in 1..n{
+        let old_a= a;
+        a= b;
+        b+= old_a;
+    }
+    b
+}
+
+fn main() {
+    let x= factorial_iter(12);
+    let y= factorial_loop(20);
+    let fib= fibonacci(35);
+    println!("Factorial 1: {}, Factorial 2: {}, fibbonaci: {}", x, y, fib);
+}
+
