@@ -140,3 +140,5 @@ q_z= probability the attacker will ever catch up from z blocks behind
 </picture>
 
 (you can check the code at ./docs/poisson)
+
+And so on
